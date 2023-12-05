@@ -60,3 +60,8 @@ input_N:
     move $a1, $t1  # Move M to $a1
     move $a2, $t2  # Move N to $a2
     jal calculate_gcd
+
+    # Display result
+    li $v0, 4
+    la $a0, result
+    syscall
