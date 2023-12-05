@@ -8,3 +8,9 @@ newline:  .asciiz "\n"
 
     .text
     .globl main
+
+main:
+    # Prompt user for input: L
+    li $v0, 4
+    la $a0, prompt_L
+    syscall
