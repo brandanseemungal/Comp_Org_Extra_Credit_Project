@@ -43,3 +43,10 @@ input_N:
     li $v0, 5
     syscall
     move $t2, $v0
+
+
+
+    # Check if L, M, and N are legal numbers
+    blez $t0, input_error_L
+    blez $t1, input_error_M
+    blez $t2, input_error_N
