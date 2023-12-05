@@ -79,3 +79,9 @@ input_error_M:
     la $a0, error
     syscall
     j input_M
+
+input_error_N:
+    li $v0, 4
+    la $a0, error
+    syscall
+    j input_N
