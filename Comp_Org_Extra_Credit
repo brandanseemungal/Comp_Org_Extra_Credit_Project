@@ -19,3 +19,9 @@ input_L:
     li $v0, 5
     syscall
     move $t0, $v0
+
+
+    # Prompt user for input: M
+    li $v0, 4
+    la $a0, prompt_M
+    syscall
