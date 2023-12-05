@@ -2,3 +2,9 @@
 prompt_L: .asciiz "Enter a number (L > 20): "
 prompt_M: .asciiz "Enter a number (M > 20): "
 prompt_N: .asciiz "Enter a number (N > 20): "
+error:    .asciiz "Illegal Number!\n"
+result:   .asciiz "Greatest Common Divisor: "
+newline:  .asciiz "\n"
+
+    .text
+    .globl main
