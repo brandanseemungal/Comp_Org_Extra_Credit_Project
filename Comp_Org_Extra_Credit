@@ -54,3 +54,9 @@ input_N:
     blt $t0, $t3, input_error_L
     blt $t1, $t3, input_error_M
     blt $t2, $t3, input_error_N
+
+    # Calculate GCD of L, M, and N
+    move $a0, $t0  # Move L to $a0
+    move $a1, $t1  # Move M to $a1
+    move $a2, $t2  # Move N to $a2
+    jal calculate_gcd
