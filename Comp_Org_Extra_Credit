@@ -67,3 +67,9 @@ input_N:
     # Exit program
     li $v0, 10
     syscall
+
+input_error_L:
+    li $v0, 4
+    la $a0, error
+    syscall
+    j main
