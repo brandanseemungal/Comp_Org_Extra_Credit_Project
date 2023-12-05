@@ -85,3 +85,8 @@ input_error_N:
     la $a0, error
     syscall
     j input_N
+
+calculate_gcd:
+    # Calculate GCD using Euclidean algorithm
+    move $t4, $a0  # Store L in $t4
+    move $t5, $a1  # Store M in $t5
