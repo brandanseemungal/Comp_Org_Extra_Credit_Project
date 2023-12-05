@@ -50,3 +50,7 @@ input_N:
     blez $t0, input_error_L
     blez $t1, input_error_M
     blez $t2, input_error_N
+    li $t3, 21
+    blt $t0, $t3, input_error_L
+    blt $t1, $t3, input_error_M
+    blt $t2, $t3, input_error_N
