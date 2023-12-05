@@ -65,3 +65,7 @@ input_N:
     li $v0, 4
     la $a0, result
     syscall
+
+    move $a0, $v0  # Move GCD to $a0
+    li $v0, 1
+    syscall
