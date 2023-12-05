@@ -90,3 +90,8 @@ calculate_gcd:
     # Calculate GCD using Euclidean algorithm
     move $t4, $a0  # Store L in $t4
     move $t5, $a1  # Store M in $t5
+
+gcd_loop:
+    beq $t5, $zero, gcd_exit  # Check if M == 0
+    move $t6, $t5  # Store M in $t6
+    div $t4, $t5   # Divide L by M
