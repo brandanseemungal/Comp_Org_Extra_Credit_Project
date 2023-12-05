@@ -95,3 +95,7 @@ gcd_loop:
     beq $t5, $zero, gcd_exit  # Check if M == 0
     move $t6, $t5  # Store M in $t6
     div $t4, $t5   # Divide L by M
+    mfhi $t4       # Remainder in $t4
+    move $t4, $t6  # Swap M and the remainder
+
+    j gcd_loop
