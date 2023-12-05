@@ -37,3 +37,9 @@ input_M:
     li $v0, 4
     la $a0, prompt_N
     syscall
+
+
+input_N:
+    li $v0, 5
+    syscall
+    move $t2, $v0
