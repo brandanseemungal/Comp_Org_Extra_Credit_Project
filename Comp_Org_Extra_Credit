@@ -99,3 +99,7 @@ gcd_loop:
     move $t4, $t6  # Swap M and the remainder
 
     j gcd_loop
+
+gcd_exit:
+    move $v0, $t4  # Store GCD in $v0
+    jr $ra         # Return to main
